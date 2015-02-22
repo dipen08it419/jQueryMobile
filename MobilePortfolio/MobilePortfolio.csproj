@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\DIPEN_Resume_2014_Web_Developer.pdf" />
+    <Content Include="images\android.png" />
     <Content Include="Scripts\lib\jquery.mobile-1.4.5.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -75,7 +76,6 @@
     <Content Include="css\jquery.mobile.theme-1.4.5.min.css" />
     <Content Include="css\site.css" />
     <Content Include="images\ajax-loader.gif" />
-    <Content Include="images\android.jpg" />
     <Content Include="images\devsd_logo.png" />
     <Content Include="images\dipen.png" />
     <Content Include="images\github.png" />
