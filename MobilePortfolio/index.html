@@ -12,6 +12,10 @@
     <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet" />
     <link href="css/jquery.mobile.icons-1.4.5.min.css" rel="stylesheet" />
     <link href="css/site.css" rel="stylesheet" />
+
+    <!-- including javascripts -->
+    <script src="Scripts/lib/jquery-2.1.3.min.js"></script>
+    <script src="Scripts/lib/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body>
     <div id="home" data-role="page">
@@ -98,10 +102,45 @@
         </div>
 
         <!-- Section: Content -->
-        <div data-role="content"></div>
+        <div data-role="content">
+            <div data-role="content">
+                <h2>Dipen Shah</h2>
+                <strong>Toronto, ON Canada</strong>
+                <div>
+                    <span data-icon="custom" class="ui-icon-mail">&nbsp;</span> <a href="mailto:dipen08it419@gmail.com">dipen08it419@gmail.com</a>
+                </div>
+                <div>
+                    <span data-icon="custom" class="ui-icon-phone"></span> +1 (647)278-7694
+                </div>
+                <div>
+                    <img src="images/linkedin-icon.png" alt="Linked In" />
+                    <a href="http://ca.linkedin.com/pub/dipen-shah/3a/33/18a" target="_blank">Dipen Shah</a>
+                </div>
+
+            </div>
+
+            <div data-role="content">
+                <div data-role="header">
+                    Inquiry Form
+                </div>
+                <div data-role="content">
+                    <form name="contactForm" novalidate>
+                        <div>
+                            <label>Email Id</label>
+                            <input type="email" placeholder="Enter your Email Id" required="true" />
+                        </div>
+                        <div>
+                            <label>Message</label>
+                            <textarea rows="5" name="message" placeholder="Enter Message" required="true"></textarea>
+                        </div>
+                        <input type="button" value="Send Message" />
+                    </form>
+                </div>
+            </div>
+        </div>
 
         <!-- Section: Footer -->
-        <div data-role="footer" data-position="fixed" data-fullscreen="true"></div>
+        <div data-role="footer" data-fullscreen="true"></div>
     </div>
 
     <div id="projects" data-role="page">
@@ -134,7 +173,5 @@
 </body>
 </html>
 
-<!-- including javascripts -->
-<script src="Scripts/lib/jquery-2.1.3.min.js"></script>
-<script src="Scripts/lib/jquery.mobile-1.4.5.min.js"></script>
+
 <script src="Scripts/app/app.js"></script>
