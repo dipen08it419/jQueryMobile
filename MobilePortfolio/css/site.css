@@ -15,3 +15,10 @@
 li a img{
     padding:5px;
 }
+.text-muted{
+    color:#777;
+}
+img.inline{
+    width:64px;
+    height:64px;
+}
