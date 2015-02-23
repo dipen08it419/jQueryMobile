@@ -5,7 +5,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <link rel="shortcut icon" href="images/devsd_logo.png" />
+    <link rel="shortcut icon" href="./images/devsd_logo.png" />
 
     <!-- including css -->
     <link href="css/jquery.mobile.theme-1.4.5.min.css" rel="stylesheet" />
@@ -21,17 +21,17 @@
     <div id="home" data-role="page">
         <div data-role="header">
             <h1>Dipen's Portfolio</h1>
+
+            <a href="#menu" data-icon="grid">Menu</a>
         </div>
 
-        <div data-role="navbar">
-            <ul>
-                <li><a href="#home" data-icon="home" class="btn ui-btn-active"> Home</a></li>
-                <li><a href="#about" data-icon="info"> About Me</a></li>
-                <li><a href="#contact" data-icon="custom" class="ui-icon-phone"> Contact Me</a></li>
-            </ul>
-            <ul>
-                <li><a href="#projects"><span class="glyphicon glyphicon-folder-open"> </span> &nbsp;Projects</a></li>
-                <li><a href="#services"><span class="glyphicon glyphicon-cog"> </span> Services</a></li>
+        <div data-role="panel" data-position="left" data-display="overlay" id="menu">
+            <ul data-role="listview">
+                <li><a href="#home"> Home</a></li>
+                <li><a href="#about"> About Me</a></li>
+                <li><a href="#contact"> Contact Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
             </ul>
         </div>
 
@@ -47,7 +47,7 @@
         <div data-role="header">
             <h1>About Dipen</h1>
 
-            <a href="#home" data-icon="home">Home</a>
+            <a onclick="javascript: history.back(-1);" data-icon="back">back</a>
         </div>
 
         <!-- Section: Content -->
@@ -98,7 +98,7 @@
         <div data-role="header">
             <h1>Contact Dipen</h1>
 
-            <a href="#home" data-icon="home">Home</a>
+            <a onclick="javascript: history.back(-1);" data-icon="back">back</a>
         </div>
 
         <!-- Section: Content -->
@@ -147,7 +147,7 @@
         <div data-role="header">
             <h1>Projects</h1>
 
-            <a href="#home" data-icon="home">Home</a>
+            <a onclick="javascript: history.back(-1);" data-icon="back">back</a>
         </div>
 
         <!-- Section: Content -->
@@ -207,7 +207,7 @@
         <div data-role="header">
             <h1>ERP System</h1>
 
-            <a href="#projects" data-icon="grid">Projects</a>
+            <a onclick="javascript: history.back(-1);" data-icon="back">back</a>
             <a href="#home" data-icon="home">Home</a>
         </div>
 
@@ -237,7 +237,7 @@
         <div data-role="header">
             <h1>Library Management System</h1>
 
-            <a href="#projects" data-icon="grid">Projects</a>
+            <a onclick="javascript: history.back(-1);" data-icon="back">back</a>
             <a href="#home" data-icon="home">Home</a>
         </div>
 
@@ -268,7 +268,7 @@
         <div data-role="header">
             <h1>WeMeet</h1>
 
-            <a href="#projects" data-icon="grid">Projects</a>
+            <a onclick="javascript: history.back(-1);" data-icon="back">back</a>
             <a href="#home" data-icon="home">Home</a>
         </div>
 
@@ -298,7 +298,7 @@
         <div data-role="header">
             <h1>BOB - the Builder</h1>
 
-            <a href="#projects" data-icon="grid">Projects</a>
+            <a onclick="javascript: history.back(-1);" data-icon="back">back</a>
             <a href="#home" data-icon="home">Home</a>
         </div>
 
@@ -331,7 +331,7 @@
         <div data-role="header">
             <h1>Services</h1>
 
-            <a href="#home" data-icon="home">Home</a>
+            <a onclick="javascript: history.back(-1);" data-icon="back">back</a>
         </div>
 
         <!-- Section: Content -->
