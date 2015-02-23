@@ -1,3 +1,7 @@
 ﻿[data-role=title]{
     font-weight:normal;
 }
+
+li a img{
+    padding:5px;
+}
