@@ -25,11 +25,12 @@
             <a href="#menu" data-icon="grid">Menu</a>
         </div>
 
+        <!-- Section : Menu Panel -->
         <div data-role="panel" data-position="left" data-display="overlay" id="menu">
             <ul data-role="listview">
                 <li><a href="#home"> Home</a></li>
-                <li><a href="#about"> About Me</a></li>
-                <li><a href="#contact"> Contact Me</a></li>
+                <li><a href="#about"> About</a></li>
+                <li><a href="#contact"> Contact</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#services">Services</a></li>
             </ul>
@@ -106,34 +107,39 @@
             <div data-role="content">
                 <h2>Dipen Shah</h2>
                 <strong>Toronto, ON Canada</strong>
-                <div>
-                    <span data-icon="custom" class="ui-icon-mail">&nbsp;</span> <a href="mailto:dipen08it419@gmail.com">dipen08it419@gmail.com</a>
-                </div>
-                <div>
-                    <span data-icon="custom" class="ui-icon-phone"></span> +1 (647)278-7694
-                </div>
-                <div>
-                    <img src="images/linkedin-icon.png" alt="Linked In" />
-                    <a href="http://ca.linkedin.com/pub/dipen-shah/3a/33/18a" target="_blank">Dipen Shah</a>
-                </div>
+                <a data-icon="custom" class="ui-btn ui-icon-mail ui-btn-icon-right" href="mailto:dipen08it419@gmail.com">dipen08it419@gmail.com</a>
+                <a data-icon="custom" class="ui-btn ui-icon-phone ui-btn-icon-right" href="tel:+16472787694">Call Dipen</a>
+
+                Follow Dipen:
+
+                <a class="ui-btn-inline" href="http://ca.linkedin.com/pub/dipen-shah/3a/33/18a" target="_blank">
+                    <img class="img-thumbnail" src="images/linkedin.png" alt="" />
+                </a>
+                <a class="ui-btn-inline" href="https://plus.google.com/u/0/+shahdipen419" target="_blank">
+                    <img class="img-thumbnail" src="images/google-plus.png" alt="" />
+                </a>
+                <a class="ui-btn-inline" href="https://twitter.com/_dipen08it419" target="_blank">
+                    <img class="img-thumbnail" src="images/twitter.png" alt="" />
+                </a>
+
 
             </div>
 
-            <div data-role="content">
-                <div data-role="header">
-                    Inquiry Form
+            <div class="service">
+                <div data-role="title">
+                    <b>Inquiry Form</b>
                 </div>
                 <div data-role="content">
-                    <form name="contactForm" novalidate>
+                    <form name="contactForm" onsubmit="sendMessage(); return false;">
                         <div>
                             <label>Email Id</label>
-                            <input type="email" placeholder="Enter your Email Id" required="true" />
+                            <input id="emailId" type="email" placeholder="Enter your Email Id" required="true" />
                         </div>
                         <div>
                             <label>Message</label>
-                            <textarea rows="5" name="message" placeholder="Enter Message" required="true"></textarea>
+                            <textarea rows="5" id="message" placeholder="Enter Message" required="true"></textarea>
                         </div>
-                        <input type="button" value="Send Message" />
+                        <input type="submit" value="Send Message" />
                     </form>
                 </div>
             </div>
