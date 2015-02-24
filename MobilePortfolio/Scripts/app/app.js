@@ -9,6 +9,15 @@ $('[data-role=page]').on('pageshow', function (event, ui) {
     //$("#" + event.target.id).find("[data-role=navbar]").navbar();
 });
 
+//loading banners
+$(function () {
+    $(".rslides").responsiveSlides({
+        pager: false,
+        prevText: "Previous",
+        nextText: "Next"
+    });
+});
+
 //method to send message using service hosted
 function sendMessage() {
     var emailId = $("#emailId").val();
