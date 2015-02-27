@@ -12,8 +12,8 @@ $('[data-role=page]').on('pageshow', function (event, ui) {
 //loading sliders
 $(document).ready(function () {
     $('#slider1').tinycarousel();
-});
 
+});
 //method to send message using service hosted
 function sendMessage() {
     var emailId = $("#emailId").val();
@@ -22,10 +22,10 @@ function sendMessage() {
     if (emailId && message) {
 
         var data = $.ajax({
-            type:'GET',
+            type: 'GET',
             url: 'http://aspspider.info/dipen08it419/ContactService.svc/Contact?emailId=' + emailId + '&message=' + message,
             crossDomain: true,
-            dataType:'jsonp'
+            dataType: 'jsonp'
         }).success(function (data, status) {
             if (data) {
                 alert('Your message sent successfully!');
