@@ -1,9 +1,11 @@
-﻿[data-role=title] {
+﻿/* Style for titles of the page */
+[data-role=title] {
     font-weight: normal;
     border-bottom: 1px solid #a09e9e;
     padding-bottom: 5px;
 }
 
+/* Style for service div of the services page */
 .service {
     background-color: #f1f1f1;
     border: 1px solid #c1bcbc;
@@ -12,41 +14,76 @@
     margin-top: 10px;
     box-shadow: #cfcece 3px 3px 3px;
 }
-
+/* Style for images shown in projects list */
 li a img {
     padding: 5px;
 }
 
+/* Style for muted text */
 .text-muted {
     color: #777;
 }
 
-.rslides {
-  position: relative;
-  list-style: none;
-  overflow: hidden;
-  padding: 0;
-  margin: 0;
-  }
+/* Style for caption on the slider */
+.caption{
+    position:absolute;
+    padding:10px;
+    display:inline;
+    top:50%;
+    width:210px;
+    left:5%;
+    background-color: rgba(148,148,148,1);
+}
 
-.rslides li {
-  -webkit-backface-visibility: hidden;
-  position: absolute;
-  display: none;
-  width: 100%;
-  left: 0;
-  top: 0;
-  }
+/* Style for subtitle within page*/
+.subtitle{
+    font-weight:normal;
+    padding-top:10px;
+    padding-bottom:5px;
+    border-bottom:1px solid #a09e9e;
+    margin:0px;
+}
+/* style for link to the pop up panels */
+[data-rel="popup"]{
+    text-decoration:none;
+}
+/* style for images shown in the gallery */
+[data-rel="popup"] img{
+    width:128px;
+    height:128px;
+    border:1px solid #777;
+    margin:5px;
+}
 
-.rslides li:first-child {
-  position: relative;
-  display: block;
-  float: left;
-  }
-
-.rslides img {
-  display: block;
-  height: auto;
-  float: left;
-  border: 0;
-  }
+/* Tiny Carousel CSS */
+#slider1 { height: 1%; overflow: hidden; padding: 0 0 10px; }
+#slider1 .viewport { float:left; width: 260px; height: 260px; overflow: hidden; position: relative absolute; }
+#slider1 .buttons {
+    background: #C01313;
+    border-radius: 35px;
+    display: inline;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 35px;
+    text-decoration: none;
+    font-size: 22px;
+    top:120px;
+}
+#slider1 .buttons:hover {
+    color: #C01313;
+    background: #fff;
+    border:1px solid #C01313;
+}
+.prev{
+    float: left;
+}
+.next{
+    float:left;
+}
+#slider1 .disable { visibility: hidden; }
+#slider1 .overview { list-style: none; position: relative; padding: 0; margin: 0; width: 300px; left: 0; top: 0; }
+#slider1 .overview li { float: left; position:absolute relative; margin: 0 0 0 0; padding: 1px; height: 256px; border: 1px solid #dcdcdc; width: 256px; }

@@ -16,7 +16,7 @@
     <!-- including javascripts -->
     <script src="Scripts/lib/jquery-2.1.3.min.js"></script>
     <script src="Scripts/lib/jquery.mobile-1.4.5.min.js"></script>
-    <script src="Scripts/lib/ResponsiveSlides.js"></script>
+    <script src="Scripts/lib/jquery.tinycarousel.min.js"></script>
 </head>
 <body>
     <div id="home" data-role="page">
@@ -55,20 +55,25 @@
             </div>
 
             <div>
-                <ul class="rslides">
-                    <li>
-                        <img src="images/projects/BOB/bob_1.png" />
-                        <p>This is a slide.</p>
-                    </li>
-                    <li>
-                        <img src="images/projects/LMS/lms_1.png" />
-                        <p>This is another slide.</p>
-                    </li>
-                    <li>
-                        <img src="images/projects/WeMeet/wm_1.png" />
-                        <p>This is a final slide.</p>
-                    </li>
-                </ul>
+                <center>
+                    <div id="slider1">
+                        <a class="buttons prev" href="#">&#60;</a>
+                        <div class="viewport">
+                            <ul class="overview">
+                                <li>
+                                    <img a src="images/projects/ERP/erp_1.png" />
+                                </li>
+                                <li>
+                                    <img src="images/projects/LMS/lms_1.png" />
+                                </li>
+                                <li>
+                                    <img src="images/projects/WeMeet/wm_1.png" />
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="buttons next" href="#">&#62;</a>
+                    </div>
+                </center>
             </div>
         </div>
 
@@ -262,6 +267,38 @@
                         <br /><br />
                         <strong>Technologies: </strong> C#.NET, MS Reporting, MS SQL Server
                     </div>
+                    <!-- Image Gallery for the project -->
+                    <div>
+                        <h4 class="subtitle">Gallery</h4>
+
+                        <a href="#erp_1" data-rel="popup" data-position-to="window" data-transition="fade">
+                            <img class="popphoto" src="images/projects/ERP/erp_1.png">
+                        </a>
+                        <a href="#erp_2" data-rel="popup" data-position-to="window" data-transition="fade">
+                            <img class="popphoto" src="images/projects/ERP/erp_2.png">
+                        </a>
+                        <a href="#erp_3" data-rel="popup" data-position-to="window" data-transition="fade">
+                            <img class="popphoto" src="images/projects/ERP/erp_3.png">
+                        </a>
+                        <div data-role="popup" id="erp_1" data-overlay-theme="b" data-theme="b" data-corners="false">
+                            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                            <center>
+                                <img class="popphoto" src="images/projects/ERP/erp_1.png" />
+                            </center>
+                        </div>
+                        <div data-role="popup" id="erp_2" data-overlay-theme="b" data-theme="b" data-corners="false">
+                            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                            <center>
+                                <img class="popphoto" src="images/projects/ERP/erp_2.png" />
+                            </center>
+                        </div>
+                        <div data-role="popup" id="erp_3" data-overlay-theme="b" data-theme="b" data-corners="false">
+                            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                            <center>
+                                <img class="popphoto" src="images/projects/ERP/erp_3.png" />
+                            </center>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -293,6 +330,21 @@
                         <br /><br />
                         <strong>Technologies: </strong> C#.NET, MS Reporting, MS SQL Server
                     </div>
+
+                    <!-- Image Gallery for the project -->
+                    <div>
+                        <h4 class="subtitle">Gallery</h4>
+
+                        <a href="#lms_1" data-rel="popup" data-position-to="window" data-transition="fade">
+                            <img class="popphoto" src="images/projects/LMS/lms_1.png">
+                        </a>
+                        <div data-role="popup" id="lms_1" data-overlay-theme="b" data-theme="b" data-corners="false">
+                            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                            <center>
+                                <img class="popphoto" src="images/projects/LMS/lms_1.png" />
+                            </center>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -322,6 +374,39 @@
 
                         <br /><br />
                         <strong>Technologies: </strong> Android, WCF, MS SQL Server
+                    </div>
+
+                    <!-- Image Gallery for the project -->
+                    <div>
+                        <h4 class="subtitle">Gallery</h4>
+
+                        <a href="#wm_1" data-rel="popup" data-position-to="window" data-transition="fade">
+                            <img class="popphoto" src="images/projects/WeMeet/wm_1.png">
+                        </a>
+                        <a href="#wm_2" data-rel="popup" data-position-to="window" data-transition="fade">
+                            <img class="popphoto" src="images/projects/WeMeet/wm_2.png">
+                        </a>
+                        <a href="#wm_3" data-rel="popup" data-position-to="window" data-transition="fade">
+                            <img class="popphoto" src="images/projects/WeMeet/wm_3.png">
+                        </a>
+                        <div data-role="popup" id="wm_1" data-overlay-theme="b" data-theme="b" data-corners="false">
+                            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                            <center>
+                                <img class="popphoto" src="images/projects/WeMeet/wm_1.png" />
+                            </center>
+                        </div>
+                        <div data-role="popup" id="wm_2" data-overlay-theme="b" data-theme="b" data-corners="false">
+                            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                            <center>
+                                <img class="popphoto" src="images/projects/WeMeet/wm_2.png" />
+                            </center>
+                        </div>
+                        <div data-role="popup" id="wm_3" data-overlay-theme="b" data-theme="b" data-corners="false">
+                            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                            <center>
+                                <img class="popphoto" src="images/projects/WeMeet/wm_3.png" />
+                            </center>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -353,6 +438,39 @@
 
                         <br /><br />
                         <strong>Technologies: </strong> C#.NET, MS Access
+                    </div>
+
+                    <!-- Image Gallery for the project -->
+                    <div>
+                        <h4 class="subtitle">Gallery</h4>
+
+                        <a href="#bob_1" data-rel="popup" data-position-to="window" data-transition="fade">
+                            <img class="popphoto" src="images/projects/BOB/bob_1.png">
+                        </a>
+                        <a href="#bob_2" data-rel="popup" data-position-to="window" data-transition="fade">
+                            <img class="popphoto" src="images/projects/BOB/bob_2.png">
+                        </a>
+                        <a href="#bob_3" data-rel="popup" data-position-to="window" data-transition="fade">
+                            <img class="popphoto" src="images/projects/BOB/bob_3.png">
+                        </a>
+                        <div data-role="popup" id="bob_1" data-overlay-theme="b" data-theme="b" data-corners="false">
+                            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                            <center>
+                                <img class="popphoto" src="images/projects/BOB/bob_1.png" />
+                            </center>
+                        </div>
+                        <div data-role="popup" id="bob_2" data-overlay-theme="b" data-theme="b" data-corners="false">
+                            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                            <center>
+                                <img class="popphoto" src="images/projects/BOB/bob_2.png" />
+                            </center>
+                        </div>
+                        <div data-role="popup" id="bob_3" data-overlay-theme="b" data-theme="b" data-corners="false">
+                            <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                            <center>
+                                <img class="popphoto" src="images/projects/BOB/bob_3.png" />
+                            </center>
+                        </div>
                     </div>
                 </div>
             </div>

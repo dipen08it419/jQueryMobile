@@ -9,13 +9,9 @@ $('[data-role=page]').on('pageshow', function (event, ui) {
     //$("#" + event.target.id).find("[data-role=navbar]").navbar();
 });
 
-//loading banners
-$(function () {
-    $(".rslides").responsiveSlides({
-        pager: false,
-        prevText: "Previous",
-        nextText: "Next"
-    });
+//loading sliders
+$(document).ready(function () {
+    $('#slider1').tinycarousel();
 });
 
 //method to send message using service hosted
