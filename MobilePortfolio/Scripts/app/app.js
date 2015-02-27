@@ -1,26 +1,29 @@
-﻿/// <reference path="../lib/jquery-2.1.3.min.js" />
-
-//File: app.js
+﻿//File: app.js
 //Author: Dipen Shah
-//Description: This script contains javascript
+//Website: http://dipen08it419.github.io/m/index.html
+//Description: This file contains javascript code specific to mobile portfolio site of the author.
 
+//dynamically adding same footer on each page when page show event occurs
 $('[data-role=page]').on('pageshow', function (event, ui) {
     $("#" + event.target.id).find("[data-role=footer]").html("<span aria-level='1' role='heading' class='ui-title'>© 2015 Dipen Shah. All Rights Reserved.</span><center><a href='http://dipen08it419.github.io'>visit full site</a></center>");
-    //$("#" + event.target.id).find("[data-role=navbar]").navbar();
 });
 
-//loading sliders
+//loading home page projects slider
 $(document).ready(function () {
     $('#slider1').tinycarousel();
 
 });
+
 //method to send message using service hosted
 function sendMessage() {
+    //fetching values from input fields
     var emailId = $("#emailId").val();
     var message = $("#message").val();
 
+    //validating input
     if (emailId && message) {
 
+        //executing ajax call to hosted service
         var data = $.ajax({
             type: 'GET',
             url: 'http://aspspider.info/dipen08it419/ContactService.svc/Contact?emailId=' + emailId + '&message=' + message,
