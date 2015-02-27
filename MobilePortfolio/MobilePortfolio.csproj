@@ -59,6 +59,8 @@
   <ItemGroup>
     <Content Include="assets\DIPEN_Resume_2014_Web_Developer.pdf" />
     <Content Include="images\android.png" />
+    <Content Include="images\projects.png" />
+    <Content Include="images\services.png" />
     <Content Include="Scripts\lib\jquery.mobile-1.4.5.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

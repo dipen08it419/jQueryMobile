@@ -6,28 +6,39 @@
 */
 /* Hiding navigation based on mobile or tablet device detection */
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 767px) {
-    #tab_menu{
-        display:none;
-        visibility:hidden;
+@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+    #tab_menu {
+        display: none;
+        visibility: hidden;
     }
-    a[href='#tab_menu']{
-        display:none;
-        visibility:hidden;
+
+    a[href='#tab_menu'] {
+        display: none;
+        visibility: hidden;
     }
 }
 
 /* All other screen sizes will be considered as Tablet */
-@media only screen 
-and (min-device-width : 768px){
-    [data-role="navbar"]{
-        visibility:hidden;
-        display:none;
+@media only screen and (min-device-width : 768px) {
+    [data-role="navbar"] {
+        visibility: hidden;
+        display: none;
     }
 }
 
+/* Style for image button */
+.projects, .services {
+    background-repeat:no-repeat;
+    background-position:10% center;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.projects{
+    background-image: url('../images/projects.png');
+}
+.services{
+    background-image: url('../images/services.png');
+}
 /* Style for titles of the page */
 [data-role=title] {
     font-weight: normal;
@@ -55,68 +66,105 @@ li a img {
 }
 
 /* Style for caption on the slider */
-.caption{
-    position:absolute;
-    padding:10px;
-    display:inline;
-    top:50%;
-    width:210px;
-    left:5%;
+.caption {
+    position: absolute;
+    padding: 10px;
+    display: inline;
+    top: 50%;
+    width: 210px;
+    left: 5%;
     background-color: rgba(148,148,148,1);
 }
 
 /* Style for subtitle within page*/
-.subtitle{
-    font-weight:normal;
-    padding-top:10px;
-    padding-bottom:5px;
-    border-bottom:1px solid #a09e9e;
-    margin:0px;
+.subtitle {
+    font-weight: normal;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #a09e9e;
+    margin: 0px;
 }
 /* style for link to the pop up panels */
-[data-rel="popup"]{
-    text-decoration:none;
+[data-rel="popup"] {
+    text-decoration: none;
 }
-/* style for images shown in the gallery */
-[data-rel="popup"] img{
-    width:128px;
-    height:128px;
-    border:1px solid #777;
-    margin:5px;
-}
+    /* style for images shown in the gallery */
+    [data-rel="popup"] img {
+        width: 128px;
+        height: 128px;
+        border: 1px solid #777;
+        margin: 5px;
+    }
 /* Style for center text */
-.text-center{
-    text-align:center;
+.text-center {
+    text-align: center;
 }
 /* Tiny Carousel CSS */
-#slider1 { height: 1%; width:260px; overflow: hidden; padding: 0 0 10px; position:relative; }
-#slider1 .viewport { float:left; width: 260px; height: 260px; overflow: hidden; }
-#slider1 .buttons {
-    border-radius: 35px;
-    display: block;
-    width: 35px;
-    height: 35px;
-    color: #000;
-    font-weight: bold;
-    text-align: center;
-    line-height: 35px;
-    text-decoration: none;
-    font-size: 22px;
-    top:120px;
-    position:absolute;
-    z-index:100;
-    border:1px solid #000;
+#slider1 {
+    height: 1%;
+    width: 260px;
+    overflow: hidden;
+    padding: 0 0 10px;
+    position: relative;
 }
-#slider1 .buttons:hover {
-    color: #fff;
-    background: #000;
-}
-.prev{
+
+    #slider1 .viewport {
+        float: left;
+        width: 260px;
+        height: 260px;
+        overflow: hidden;
+    }
+
+    #slider1 .buttons {
+        border-radius: 35px;
+        display: block;
+        width: 35px;
+        height: 35px;
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        line-height: 35px;
+        text-decoration: none;
+        font-size: 22px;
+        top: 120px;
+        position: absolute;
+        z-index: 100;
+        border: 1px solid #000;
+    }
+
+        #slider1 .buttons:hover {
+            color: #fff;
+            background: #000;
+        }
+
+.prev {
     left: 0;
 }
-.next{
-    right:0;
+
+.next {
+    right: 0;
 }
-#slider1 .disable { visibility: hidden; }
-#slider1 .overview { list-style: none; position: relative; padding: 0; margin: 0; width: 300px; left: 0; top: 0; }
-#slider1 .overview li { float: left; position:absolute relative; margin: 0 0 0 0; padding: 1px; height: 256px; border: 1px solid #dcdcdc; width: 256px; }
+
+#slider1 .disable {
+    visibility: hidden;
+}
+
+#slider1 .overview {
+    list-style: none;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 300px;
+    left: 0;
+    top: 0;
+}
+
+    #slider1 .overview li {
+        float: left;
+        position: absolute relative;
+        margin: 0 0 0 0;
+        padding: 1px;
+        height: 256px;
+        border: 1px solid #dcdcdc;
+        width: 256px;
+    }
